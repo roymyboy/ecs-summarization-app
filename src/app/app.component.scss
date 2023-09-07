@@ -1,0 +1,76 @@
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center; /* Align input and button vertically */
+    margin-bottom: 10px; /* Add some spacing between input/button and error message */
+  }
+  
+  /* Style the URL input */
+  input[type="text"] {
+    flex: 1; 
+    width: 800px; /* Adjust the width as needed */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+  }
+  
+  /* Style the "Open" button */
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4285f4; 
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #357ae8; /* Darker blue color on hover */
+  }
+  
+  /* Style the error message */
+.error-message {
+    color: red; /* Set the color to red */
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  /* Style the textarea */
+textarea.summary {
+  width: 80vw; /* 80% of the viewport width */
+  height: 50vh; /* 50% of the viewport height */
+  padding: 10px;
+  font-size: 18px;
+  background-color: #FFFFFF; /* Darker background color */
+  color: #000000; /* Text color */
+  // border: 1px solid #ccc;
+  border: 1px solid #555; /* Border color */
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  resize: both; /* Allow users to resize both horizontally and vertically */
+  overflow: auto; /* Show scrollbars when content overflows */
+  margin-top: 20px; /* Add some spacing from the button */
+  font-family: Arial, Helvetica, sans-serif; /* Choose a better font */
+}
+
+.sentence-spacing {
+  line-height: 1.5; /* Adjust the value as needed */
+}
+
+body {
+  background: linear-gradient(to bottom, #fafafa, #7e6464); /* Gradient background */
+}

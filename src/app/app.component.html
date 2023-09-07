@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div class="center-container">
+      <!-- URL input and button  -->
+      <div class="input-container">
+        <input
+          type="text"
+          [(ngModel)]="urlInput"
+          placeholder="Enter a URL..."
+        >
+        <button (click)="summaryUrl()">GO</button>
+      </div>
+
+      <!-- Error message -->
+      <div *ngIf="showError" class="error-message">An error occurred while summarizing the content.</div>
+
+      <!-- Display the summary -->
+      <textarea 
+        *ngIf="summary" 
+        class="summary sentence-spacing" 
+        [value]="summary"
+        readonly>
+      </textarea>
+    </div>    
+  </body>
+</html>
